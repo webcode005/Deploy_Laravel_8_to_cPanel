@@ -1,0 +1,14 @@
+****** Most important Step after upload zip file inside domain directory and database in database ******
+
+Update Index.php File
+Navigate to the public_html folder and find index.php file. Then open this file by right click on it and select Code Edit from the menu.
+After that it open in next tab.
+
+It’s time to update the following line of code into your index.php file as follow:
+
+require __DIR__.'/../bootstrap/autoload.php';
+$app = require_once __DIR__.'/../bootstrap/app.php';
+to:
+require __DIR__.'/bootstrap/autoload.php';
+$app = require_once __DIR__.'/bootstrap/app.php';
+
